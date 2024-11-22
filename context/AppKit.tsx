@@ -22,12 +22,12 @@ createAppKit({
   networks: [mainnet, arbitrum],
   projectId,
   features: {
-    analytics: true // Optional - defaults to your Cloud configuration
+    analytics: true  
   }
 })
 
 export function AppKit() {
   return (
-    < App/> //make sure you have configured the <appkit-button> inside
+    < App/>  
   )
 }

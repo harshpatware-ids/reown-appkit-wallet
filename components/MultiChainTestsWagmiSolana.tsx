@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { useAppKitState } from '@reown/appkit/react'
 
-import { SolanaTests } from './Solana/SolanaTests'
-import { WagmiTests } from './Wagmi/WagmiTests'
+import { Ethers5Tests } from './Ethers/Ethers5Tests'
+// import { WagmiTests } from './Wagmi/WagmiTests'
 import { AppKitNetworkInfo } from './AppKitNetworkInfo'
 
 export function MultiChainTestsWagmiSolana() {
@@ -11,8 +11,8 @@ export function MultiChainTestsWagmiSolana() {
   return (
     <>
       <AppKitNetworkInfo />
-      {activeChain === 'eip155' ? <WagmiTests /> : null}
-      {activeChain === 'solana' ? <SolanaTests /> : null}
+      {activeChain === 'ether5' ? <Ethers5Tests /> : null}
+      {/* {activeChain === 'solana' ? <SolanaTests /> : null} */}
     </>
   )
 }
